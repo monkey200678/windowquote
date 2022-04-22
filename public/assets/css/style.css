@@ -1,0 +1,410 @@
+.logo-color {
+    font-family: poppins-semibold, poppins, sans-serif;
+    font-size: 106px;
+    letter-spacing: 0.05em;
+    text-shadow: #ffffff 3px 3px 0px, rgb(0 0 0 / 20%) 6px 6px 0px;
+    color: #f77d55;
+}
+
+input:focus {
+    outline: 1px solid #f77d55;
+    border: 1px solid #f77d55;
+}
+
+.checkout {
+    background-color:#f77055;
+    color:#445265;
+}
+
+.checkout:hover {
+    background-color:blue;
+    color:white;
+    cursor:pointer;
+}
+
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: 1.5em;
+}
+
+.alternate-font {
+    font-family: sans-serif;
+}
+
+.btn-outline-warning {
+    color:tomato;
+    border-color:tomato;
+}
+.btn-outline-warning:hover {
+    color: red;
+    border-color:red;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns:auto auto auto;
+    grid-template-rows:auto auto;
+}
+
+.grid-item1 {
+    grid-column: 2 / span 2;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.grid-item2 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 20px;
+}
+
+.grid-item3 {
+    grid-column: 2 / span 2;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 20px;
+}
+
+.third-img:hover {
+    cursor:pointer;
+    border: 3px solid tomato;
+}
+
+.third-img {
+    transition: all 5s ease-out;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.indicator:hover {
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.frame-indicator:hover {
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.double-indicator:hover {
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.tripple-indicator:hover {
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.standard-indicator:hover {
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.exterior-indicator:hover {
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.warranty-indicator:hover {
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.no-warranty:hover {
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.win-color:hover {
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.win-grid:hover {
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#stateWrapper {
+    /* position: relative; */
+    display:flex;
+    flex-wrap: wrap;
+    /* columns: 4 10em;
+    column-gap: 1em;
+    column-rule-style: none; */
+}
+
+.stateButton {
+    /* width: 90px; */
+    flex: 1 1 85px;
+    height: 85px;
+    /* color: rgba(68,82,101,1); */
+    color: #445265;
+    margin:3px;
+    font-weight: 300;
+    font-size: 40px;
+    border-color: #f77d55;
+    background-color: white;
+}
+
+.phone {
+    display: none;
+}
+
+.laptop {
+    display: block;
+}
+
+#navWrapper > li:hover {
+    background-color: #f77037 !important;
+}
+
+.selected {
+    color: white !important;
+    background-color: #f77037 !important;
+}
+
+@media screen and (max-width: 1400px) {
+    .navWrapper {
+        background-color: #f77037 !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .laptop {
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
+
+    #stateWrapper {
+        position: relative;
+        columns: 4 3em;
+    }
+    .stateButton {
+        color: #445265;
+        font-weight: bold;
+        font-size: 33px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #f77d55;
+    }
+}
+
+.home-heading {
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .home-heading {
+        font-size: 10px;
+    }
+}
+
+.horizontal-menu.navbar-floating:not(.blank-page) .app-content {
+    padding-top: 1.75rem !important;
+}
+
+.img-section {
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.main-calc .img-section,
+.sub-calc .img-section {
+    display: flex;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-calc h3 {
+    margin-bottom: 25px;
+}
+
+.btn-yellow {
+    background: #f77d55 !important;
+}
+
+.w-70 {
+    width: 70px;
+}
+
+.line-height-1-5 {
+    line-height: 1.5 !important;
+}
+
+.text-yellow {
+    color: #f77d55;
+}
+
+.result-text {
+    font-size: 80px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.calcList {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.h-89 {
+    height: 89px;
+}
+
+#trigger:hover {
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#no_trigger:hover {
+
+    font-weight:bold;
+    cursor:pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .p-5 {
+        padding: 0 !important;
+    }
+
+    .logo-color {
+        font-size: 50px;
+    }
+
+    .home-heading {
+        font-size: 25px !important;
+        text-align: center;
+    }
+
+    .btn-mobile {
+        justify-content: space-between;
+    }
+
+}
+
+
+/* .dropBtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+} */
+
+/* The container <div> - needed to position the dropdown content */
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdownContent {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid blue;
+    background-color: lightcyan;
+}
+
+/* Change color of dropdown links on hover */
+.dropdowmContent a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropDown:hover .dropdownContent {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropDown:hover .dropBtn {
+    color: tomato;
+}
